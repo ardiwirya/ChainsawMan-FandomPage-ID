@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Quicksand:wght@500;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: inline;
+}
+
+body {
+  color: #444444;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #edab18;
+  padding: 5px;
+
+  position: sticky;
+  top: 0; /* agar navigasi selalu di atas jendela browser saat scrolling. */
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a:hover {
+  color: #2a4dc1;
+  font-weight: bold;
+}
+
+img {
+  overflow: auto;
+  width: 80px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* start style table*/
+table {
+  max-width: 100%;
+  overflow-y: auto;
+  border-collapse: collapse;
+  border: 1px #dddddd solid;
+  padding: 7px;
+  width: 100%;
+  font-family: "Roboto";
+}
+
+td {
+  min-width: 120px;
+  border: 1px #dddddd solid;
+  padding: 7px;
+  width: 20%;
+  font-family: "Roboto";
+}
+
+tr:nth-child(even) {
+  background-color: rgba(200, 200, 200, 0.4);
+}
+
+tr:first-child {
+  background-color: black;
+  color: white;
+}
+
+tr:hover {
+  background-color: #edab18;
+  color: black;
+}
+/* end style table */
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #edab18;
+  text-align: center;
+  font-weight: bold;
+}
+
+h2,
+h3 {
+  color: #2a4dc1;
+}
+
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem 2rem;
+}
+
+.jumbotron {
+  font-size: 20px;
+  padding: 20px;
+  background-color: #2a4dc1;
+  text-align: center;
+  color: white;
+}
+
+.jumbotron img {
+  width: 400px;
+  height: 80px;
+  padding: 15px;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 1000px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card {
+  box-shadow: 5px 5px 20px 0 #c19e2a;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* start Style button Selengkapnya */
+button {
+  padding: 0.6rem 2rem;
+  margin-block-start: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  font-size: "Poppins", sans-serif;
+  color: white;
+
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-color: #c19e2a;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+
+button:hover {
+  border: 3px solid #c19e2a;
+  color: #c19e2a;
+  background-color: transparent;
+}
+/* End Style button Selengkapnya */
+
+/* start style aside profile card */
+.profile {
+  height: 100%;
+  border-color: #c19e2a;
+  padding: 0;
+  margin: 0;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.profile header {
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.profile img {
+  width: 300px;
+}
+/* end style aside profile */
+
+/* Layout Responsif */
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+  aside {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+  main {
+    padding: 2rem 2rem;
+  }
+  aside {
+    align-self: stretch;
+  }
+}
