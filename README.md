@@ -2,7 +2,7 @@
 
 Website statis single-page bertema fandom anime **Chainsaw Man**, dibuat sebagai submission Tugas Akhir pada kelas [Belajar Dasar Pemrograman Web](https://www.dicoding.com/academies/123) — Dicoding. Submission ini mendapat rating **4/5**.
 
-**Demo:** [chainsawman-fandompage.netlify.app/](https://chainsawman-fandompage.netlify.app/)
+**Demo:** [Chainsaw Man Fandom Page](https://chainsawman-fandompage.netlify.app/)
 
 ![Screenshot Website](img/web.png)
 
